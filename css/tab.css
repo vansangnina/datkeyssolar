@@ -1,0 +1,72 @@
+div#tabs
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	width:100%;display:inline-block;vertical-align:top;
+}
+ul.ultabs 
+{
+	list-style:none;
+	width:100%;
+	text-align:center;
+	padding:5px;
+	position:relative;
+}
+
+ul.ultabs li
+{
+	display:inline-block;vertical-align:top;
+    color: #FFF;
+    padding:6px 25px;
+    margin:5px;
+    cursor: pointer;
+    border-bottom: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-family:Roboto_M;
+	font-weight:normal;
+	background:none;
+	border:solid 1px #CCE8FF;
+}
+ul.ultabs li.active , ul.ultabs li:hover
+{
+	background:#27A2DB;
+	border-color:#27A2DB;
+	color:#FFF;
+	
+}
+div#content_tabs
+{	
+	border-top:none;
+	padding:5px;
+
+}
+
+@media screen and (max-width: 720px) {
+	ul.ultabs li {padding:3px 15px;font-size:16px;}
+	
+}
+    div#tabs ul#ultabs li {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    color: #6c757d;
+}
+div#tabs ul#ultabs {
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+div#tabs {
+    margin: 1rem 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+div#tabs ul#ultabs li.active, div#tabs ul#ultabs li:hover {
+    color: #00a651;
+}

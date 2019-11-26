@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+#AjaxPopup
+{
+    width:360px;
+    z-index: 2000;
+}
+
+#AjaxPopupText
+{
+    margin: 5px;
+}
+#AjaxPopup1_lblHeader {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2290FF;
+}
+
+#AjaxPopup1_lblTime {
+	font-size: 10px;
+	font-style: italic;
+}
+#AjaxPopup1_lblgia {
+	font-size: 14px;
+	font-weight: bold;
+	color: #900;
+}
+
+
+#AjaxPopupText img
+{
+    padding: 1px;
+	border: solid 1px #c1cedb;	
+	margin: 5px 10px 5px 0;
+	float: left;
+}
+#sumctsSummary {
+	text-align: left;
+}
+.ShowToolTip
+{
+	border: #333333 1px solid;
+	padding:5px;
+	z-index: 100;
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+	visibility: hidden;
+	width: 360px;
+	position: absolute;
+	background-color: #fff8ed;
+	text-align: left;
+	padding-right:10px;
+}

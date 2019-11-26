@@ -1,0 +1,59 @@
+.captionOrange, .captionBlack
+{
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.captionOrange
+{
+	background: #EB5100;
+	background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+	font-size:16px;
+	background: #000;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover
+{
+	color: #eb5100;
+	text-decoration: underline;
+	background-color: #eeeeee;
+	background-color: rgba(238, 238, 238, 0.7);
+}
+
+.jssora05l{
+	display: block;
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    background: url(../images/a17.png) no-repeat;
+    overflow: hidden;
+    left: 20px;
+	background-position: -10px -40px;
+	
+}
+.jssora05l:hover{ background-position: -130px -40px;}
+.jssora05r {
+	display: block;
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    background: url(../images/a17.png) no-repeat;
+    overflow: hidden;
+    right: 20px;
+	background-position: -70px -40px;
+}
+.jssora05r:hover{ background-position: -190px -40px;}
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }

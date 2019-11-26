@@ -1,0 +1,72 @@
+RewriteEngine on
+Options -Indexes
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+<IfModule mod_expires.c>
+ExpiresActive on
+
+# V&#7899;i các t&#7879;p tin html
+ExpiresByType text/html "access plus 0 seconds"
+
+
+# V&#7899;i các t&#7879;p tin hình &#7843;nh, video, âm thanh
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/GIF "access plus 1 month"
+ExpiresByType image/JPEG "access plus 1 month"
+ExpiresByType image/PNG "access plus 1 month"
+ExpiresByType image/JPG "access plus 1 month"
+
+
+# V&#7899;i CSS và JavaScript
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+</IfModule>
+RewriteRule ^admin/(.*)$ admin/$1 [L]
+RewriteRule ^sitemap.xml$ sitemap.php [L]
+#RewriteRule ^upload/sanpham/(.*\.(jp?g|gif|png))$ watermark.php?image=$1 [L]
+#RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb_watermark.php?w=$1&h=$2&zc=$3&q=100&src=http://%{HTTP_HOST}/$4  [L]
+
+RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb.php?w=$1&h=$2&zc=$3&q=95&src=http://%{HTTP_HOST}/$4  [L]
+
+DirectoryIndex  index.php
+
+ErrorDocument 404 /404.php
+
+RewriteRule ^admin$ admin/index.php [L]
+RewriteRule ^admin/$ admin/index.php [L]
+
+RewriteRule ^&p=([0-9]+)$ index.php?&p=$1  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&id=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&p=([0-9]+)$ index.php?com=$1&id=$2&p=$3 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?com=$1  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&p=([0-9]+)$ index.php?com=$1&p=$2  [L]
+
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ index.php?com=$1&id_list=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/&p=([0-9]+)$ index.php?com=$1&id_list=$3&p=$4  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?com=$1&id_danhmuc=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/&p=([0-9]+)$ index.php?com=$1&id_danhmuc=$2&p=$3  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)$ index.php?com=$1&id_danhmuc=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)&p=([0-9]+)$ index.php?com=$1&id_danhmuc=$3&p=$4  [L]
+
+
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?com=$1&id_cat=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)&p=([0-9]+)$ index.php?com=$1&id_cat=$3&p=$4  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?com=$1&id_item=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)&p=([0-9]+)$ index.php?com=$1&id_item=$3&p=$4  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html&keyword=(.*)$ index.php?com=$1&keyword=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&keyword=(.*)&p=([0-9]+)$ index.php?com=$1&keyword=$2&p=$3  [L]

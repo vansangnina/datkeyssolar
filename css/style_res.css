@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+
+
+.top_h{padding: 10px 5px;}
+div.wap_menu{padding: 5px;}
+.logo{width: 200px;}
+div.wap_menu .menu{width: calc(100% - 200px);}
+#doitac{padding: 50px 5px;}
+div#main_footer .box_container{padding: 40px 5px;}
+#copy_right .box_container{padding: 0 5px;}
+#back-to-top{display: none !important;}
+
+}
+@media screen and (max-width: 960px) {
+div.header{display:block}
+nav#menu{display:none}
+div.wap_menu{height:auto;padding: 0px;}
+div.wap_menu .menu {width:100%;margin:0px;padding: 0px;}
+
+.top_h .left{display: none;}
+.top_h{height: 0px;padding: 0px;}
+.logo {width: 100%;text-align: center;padding-top: 5px;}
+.top_h .box_container{position: absolute;top: 0px;right: 0px;height: 0px;}
+
+.col_right_gt{width: 98%;}
+div#main_footer .left{width: 100%;}
+div#main_footer .mid{width: 50%;}
+div#main_footer .right{width: 50%;}
+.right_t{padding: 6%;}
+.right_t a {font-size: 26px;}
+
+}
+@media screen and (max-width: 800px) {
+.box_giaiphap .info p {font-size: 13px;}
+.xemthem_gp{height: 30px;width: 30px;font-size: 13px;padding-top: 5px;}
+#copy_right .txt{width: 100%;text-align: center;}
+.thongke_ft{width: 100%;text-align: center;}
+#copy_right {height: 75px;}
+}
+@media screen and (max-width: 670px) {
+	#giaiphap_index{margin-bottom: 20px;}
+	div#gioithieu_index{padding: 40px 0px;}
+	#doitac{padding: 25px 0px;}
+	.box_max{grid-template-columns: repeat(2,1fr);padding: 5px;grid-column-gap: 10px;grid-row-gap: 10px;}
+	.right_t a{font-size: 20px;}
+}
+@media screen and (max-width: 603px) {
+
+.zoom_slick{width: 100%;}
+.zoom_slick .slick2{border:none;}
+.product_info{width: 100%;padding: 0px;}
+.box_container .content iframe{width: 100%;}
+.grid_duan{grid-template-columns: repeat(2,1fr);}
+
+}
+@media screen and (max-width: 460px) {
+	#doitac {padding: 25px 5px;}
+	div#main_footer .mid{width: 100%;}
+	div#main_footer .right{width: 100%;}
+	.title_gt {min-height: 22px;font-size: 20px;}
+	#copy_right {height: 125px;}
+	.left_t{width: 100%;}
+	.right_t{width: 100%;}
+	.box_max {grid-template-columns: repeat(1,1fr);grid-column-gap: 0px;grid-row-gap: 0px;}
+	.grid_duan{grid-template-columns: repeat(1,1fr);}
+	
+}
+@media screen and (max-width: 360px) {
+
+}

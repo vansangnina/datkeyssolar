@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#AjaxPopup
+{
+    width: 100%;
+    z-index: 2000;
+}
+
+#AjaxPopupText
+{
+    margin: 5px;
+}
+
+#AjaxPopupText img
+{
+    padding: 1px;
+	border: solid 1px #c1cedb;	
+	margin: 5px 10px 5px 0;
+	float: left;
+}
+.toolTipTitle {
+	FONT-WEIGHT: bold; COLOR: #bd0000
+}
+.toolTipHeader {
+	FONT-WEIGHT: bold; WIDTH: 100%; COLOR: #000000; TEXT-ALIGN: right
+}
+.toolTipBody {
+	FONT-WEIGHT: normal; COLOR: #000; TEXT-ALIGN: left
+}
+.ShowToolTip
+{
+	border: #333333 1px solid;
+	padding: 2px 2px 2px 2px;
+	z-index: 100;
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+	visibility: hidden;
+	width: 320px;
+	position: absolute;
+	background-color: #ffffff;
+	text-align: left;
+}
+</style>
+
+<script language="javascript" type="text/javascript" src="home.js"></script>
+
+<script language="javascript" type="text/javascript" src="ajax-dynamic-content.js"></script>
+<script language="javascript" type="text/javascript" src="ajax.js"></script>
+</head>
+<body>
+<a onmouseover="AJAXShowToolTip('tooltip.php?ContentID=19'); return false;" onmouseout="AJAXHideTooltip();" href="index.php" >Tieu de</a>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@font-face{font-display: block;font-family:'myFont';src:url(font/Roboto-Regular.ttf)}
+@font-face{font-display: block;font-family:'UTM_HelvetIns';src:url(font/UTM_HelvetIns.ttf);}
+@font-face{font-display: block;font-family:'RobotoBold';src:url(font/RobotoBold.ttf)}
+@font-face{font-display: block;font-family:'UTM_Alexander';src:url(font/UTM_Alexander.ttf);src:url(font/UTM_Alexander.ttf?#iefix) format("embedded-opentype"),url(font/UTM_Alexander.ttf) format("woff"),url(font/UTM_Alexander.ttf) format("truetype"),url(font/UTM_Alexander.ttf#utm_caviarregular) format("svg");font-weight:normal;font-style:normal}
+@font-face{font-display: block;font-family:'OpenSans_R';src:url(font/OpenSans_R.ttf);src:url(font/OpenSans_R.ttf?#iefix) format("embedded-opentype"),url(font/OpenSans_R.ttf) format("woff"),url(font/OpenSans_R.ttf) format("truetype"),url(font/OpenSans_R.ttf#utm_caviarregular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-display: block;font-family:'UTM_impact';src:url(font/UTM_impact.ttf);src:url(font/UTM_impact.ttf?#iefix) format("embedded-opentype"),url(font/UTM_impact.ttf) format("woff"),url(font/UTM_impact.ttf) format("truetype"),url(font/UTM_impact.ttf#utm_caviarregular) format("svg");font-weight:700;font-style:normal}
+@font-face{font-display: block;font-family:'Roboto_M';src:url(font/Roboto_M.ttf);src:url(font/Roboto_M.ttf?#iefix) format("embedded-opentype"),url(font/Roboto_M.ttf) format("woff"),url(font/Roboto_M.ttf) format("truetype"),url(font/Roboto_M.ttf#utm_caviarregular) format("svg");font-weight:700;font-style:normal}
